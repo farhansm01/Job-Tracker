@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>PH JOB TRACKER</title>
+    <script
+      src="https://kit.fontawesome.com/d8e34e8eec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section class="container mx-auto py-15">
+        <h1
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-[#002C5C] mb-5"
+        >
+          Job Application Tracker
+        </h1>
+        <div
+          class="score-board flex flex-col md:flex-row gap-10 md:gap-4 justify-between pb-7 border-b border-[#E6E7E9]"
+        >
+          <div class="bg-[#ffffff] p-5 flex-1 rounded-lg">
+            <p class="text-[#323B49] text-lg">Total</p>
+            <p class="text-[#002C5C] font-bold text-3xl">0</p>
+          </div>
+          <div class="bg-[#ffffff] p-5 flex-1 rounded-lg">
+            <p class="text-[#323B49] text-lg">Interview</p>
+            <p class="text-[#10B981] font-bold text-3xl">0</p>
+          </div>
+          <div class="bg-[#ffffff] p-5 flex-1 rounded-lg">
+            <p class="text-[#323B49] text-lg">Rejected</p>
+            <p class="text-[#EF4444] font-bold text-3xl">0</p>
+          </div>
+        </div>
+
+        <div class="flex justify-between my-8">
+          <h2 class="text-[#002C5C] text-2xl font-semibold">Available Jobs</h2>
+          <p class="text-[#64748B] text-lg">8 jobs</p>
+        </div>
+
+        <!-- buttons -->
+        <div class="flex gap-3 mb-5">
+          <button
+            id="all-btn"
+            class="font-semibold text-[#64748B] px-5 md:px-8 py-2.5 bg-white rounded-lg"
+          >
+            All
+          </button>
+          <button
+            id="interview-btn"
+            class="font-semibold text-[#64748B] px-5 md:px-8 py-2.5 bg-white rounded-lg"
+          >
+            Interview
+          </button>
+          <button
+            id="rejected-btn"
+            class="font-semibold text-[#64748B] px-5 md:px-8 py-2.5 bg-white rounded-lg"
+          >
+            Rejected
+          </button>
+        </div>
+
+        <!-- All Cards -->
+        <div class="">
+          <div class="card bg-white rounded-xl relative p-6 mb-8 md:mb-4">
+            <h3 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              Mobile First Corp
+            </h3>
+            <p class="text-[#64748B] text-xl mb-5">React Native Developer</p>
+            <p class="text-[#64748B] mb-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+            <button
+              class="px-3 py-2.5 font-medium mb-2 bg-[#EEF4FF] rounded-lg"
+            >
+              NOT APPLIED
+            </button>
+            <p class="text-[#323B49] mb-5">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#10B981] text-[#10B981] rounded-lg"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#EF4444] text-[#EF4444] rounded-lg"
+              >
+                REJECTED
+              </button>
+            </div>
+
+            <button class="absolute top-7 right-7">
+              <i
+                class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
+              ></i>
+            </button>
+          </div>
+          <div class="card bg-white rounded-xl relative p-6 mb-8 md:mb-4">
+            <h3 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              Mobile First Corp
+            </h3>
+            <p class="text-[#64748B] text-xl mb-5">React Native Developer</p>
+            <p class="text-[#64748B] mb-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+            <button
+              class="px-3 py-2.5 font-medium mb-2 bg-[#EEF4FF] rounded-lg"
+            >
+              NOT APPLIED
+            </button>
+            <p class="text-[#323B49] mb-5">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#10B981] text-[#10B981] rounded-lg"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#EF4444] text-[#EF4444] rounded-lg"
+              >
+                REJECTED
+              </button>
+            </div>
+
+            <button class="absolute top-7 right-7">
+              <i
+                class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
+              ></i>
+            </button>
+          </div>
+          <div class="card bg-white rounded-xl relative p-6 mb-8 md:mb-4">
+            <h3 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              Mobile First Corp
+            </h3>
+            <p class="text-[#64748B] text-xl mb-5">React Native Developer</p>
+            <p class="text-[#64748B] mb-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+            <button
+              class="px-3 py-2.5 font-medium mb-2 bg-[#EEF4FF] rounded-lg"
+            >
+              NOT APPLIED
+            </button>
+            <p class="text-[#323B49] mb-5">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#10B981] text-[#10B981] rounded-lg"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#EF4444] text-[#EF4444] rounded-lg"
+              >
+                REJECTED
+              </button>
+            </div>
+
+            <button class="absolute top-7 right-7">
+              <i
+                class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
+              ></i>
+            </button>
+          </div>
+          <div class="card bg-white rounded-xl relative p-6 mb-8 md:mb-4">
+            <h3 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              Mobile First Corp
+            </h3>
+            <p class="text-[#64748B] text-xl mb-5">React Native Developer</p>
+            <p class="text-[#64748B] mb-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+            <button
+              class="px-3 py-2.5 font-medium mb-2 bg-[#EEF4FF] rounded-lg"
+            >
+              NOT APPLIED
+            </button>
+            <p class="text-[#323B49] mb-5">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#10B981] text-[#10B981] rounded-lg"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#EF4444] text-[#EF4444] rounded-lg"
+              >
+                REJECTED
+              </button>
+            </div>
+
+            <button class="absolute top-7 right-7">
+              <i
+                class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
+              ></i>
+            </button>
+          </div>
+          <div class="card bg-white rounded-xl relative p-6 mb-8 md:mb-4">
+            <h3 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              Mobile First Corp
+            </h3>
+            <p class="text-[#64748B] text-xl mb-5">React Native Developer</p>
+            <p class="text-[#64748B] mb-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+            <button
+              class="px-3 py-2.5 font-medium mb-2 bg-[#EEF4FF] rounded-lg"
+            >
+              NOT APPLIED
+            </button>
+            <p class="text-[#323B49] mb-5">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#10B981] text-[#10B981] rounded-lg"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#EF4444] text-[#EF4444] rounded-lg"
+              >
+                REJECTED
+              </button>
+            </div>
+
+            <button class="absolute top-7 right-7">
+              <i
+                class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
+              ></i>
+            </button>
+          </div>
+          <div class="card bg-white rounded-xl relative p-6 mb-8 md:mb-4">
+            <h3 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              Mobile First Corp
+            </h3>
+            <p class="text-[#64748B] text-xl mb-5">React Native Developer</p>
+            <p class="text-[#64748B] mb-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+            <button
+              class="px-3 py-2.5 font-medium mb-2 bg-[#EEF4FF] rounded-lg"
+            >
+              NOT APPLIED
+            </button>
+            <p class="text-[#323B49] mb-5">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#10B981] text-[#10B981] rounded-lg"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#EF4444] text-[#EF4444] rounded-lg"
+              >
+                REJECTED
+              </button>
+            </div>
+
+            <button class="absolute top-7 right-7">
+              <i
+                class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
+              ></i>
+            </button>
+          </div>
+          <div class="card bg-white rounded-xl relative p-6 mb-8 md:mb-4">
+            <h3 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              Mobile First Corp
+            </h3>
+            <p class="text-[#64748B] text-xl mb-5">React Native Developer</p>
+            <p class="text-[#64748B] mb-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+            <button
+              class="px-3 py-2.5 font-medium mb-2 bg-[#EEF4FF] rounded-lg"
+            >
+              NOT APPLIED
+            </button>
+            <p class="text-[#323B49] mb-5">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#10B981] text-[#10B981] rounded-lg"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#EF4444] text-[#EF4444] rounded-lg"
+              >
+                REJECTED
+              </button>
+            </div>
+
+            <button class="absolute top-7 right-7">
+              <i
+                class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
+              ></i>
+            </button>
+          </div>
+          <div class="card bg-white rounded-xl relative p-6 mb-8 md:mb-4">
+            <h3 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              Mobile First Corp
+            </h3>
+            <p class="text-[#64748B] text-xl mb-5">React Native Developer</p>
+            <p class="text-[#64748B] mb-5">
+              Remote • Full-time • $130,000 - $175,000
+            </p>
+            <button
+              class="px-3 py-2.5 font-medium mb-2 bg-[#EEF4FF] rounded-lg"
+            >
+              NOT APPLIED
+            </button>
+            <p class="text-[#323B49] mb-5">
+              Build cross-platform mobile applications using React Native. Work
+              on products used by millions of users worldwide.
+            </p>
+            <div class="flex gap-2">
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#10B981] text-[#10B981] rounded-lg"
+              >
+                INTERVIEW
+              </button>
+              <button
+                class="px-3 py-2.5 font-semibold bg-transparent border border-[#EF4444] text-[#EF4444] rounded-lg"
+              >
+                REJECTED
+              </button>
+            </div>
+
+            <button class="absolute top-7 right-7">
+              <i
+                class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interview Cards -->
+        <div class="hidden">
+          <div
+            class="bg-white rounded-lg flex flex-col justify-center items-center py-28"
+          >
+            <img class="mb-5" src="./jobs.png" alt="" />
+            <h2 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              No jobs available
+            </h2>
+            <p>Check back soon for new job opportunities</p>
+          </div>
+        </div>
+        <!-- Rejected Cards -->
+        <div class="hidden">
+          <div
+            class="bg-white rounded-lg flex flex-col justify-center items-center py-28"
+          >
+            <img class="mb-5" src="./jobs.png" alt="" />
+            <h2 class="text-[#002C5C] text-2xl font-semibold mb-1">
+              No jobs available
+            </h2>
+            <p>Check back soon for new job opportunities</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
