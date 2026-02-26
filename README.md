@@ -2,11 +2,11 @@
 
 ans: getElementById() selects one element by Id name. Id must be unique in tha page.
 
-    getElementsByClassName() selects multiple elements who have the same class name. It gives a HTML collection. It is live means it changes automatically when DOM  changes.
+getElementsByClassName() selects multiple elements who have the same class name. It gives a HTML collection. It is live means it changes automatically when DOM changes.
 
-    querySelector() selects one element but the first one that matches. it uses css selector like (.className #idName)
+querySelector() selects one element but the first one that matches. it uses css selector like (.className #idName)
 
-    querySelectorAll() selects all the elements that matches.It also used css selector. It gives a nodeList and it's static means doesn't change automatically when DOM changes.
+querySelectorAll() selects all the elements that matches.It also used css selector. It gives a nodeList and it's static means doesn't change automatically when DOM changes.
 
 2. How do you create and insert a new element into the DOM?
 
