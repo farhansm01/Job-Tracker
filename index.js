@@ -83,6 +83,7 @@ allCardSection = document.getElementById("all-card-section");
 interviewCardSection = document.getElementById("interview-card-section");
 rejectedCardSection = document.getElementById("rejected-card-section");
 
+//getting no jobs contents
 const interviewEmptyTemplate = interviewCardSection.innerHTML;
 const rejectedEmptyTemplate = rejectedCardSection.innerHTML;
 
