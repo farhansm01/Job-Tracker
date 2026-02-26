@@ -75,7 +75,7 @@ totalJob("all");
 
 
 function toggleStyle(id){
-    currentStatus = id;
+    
 
     allBtn.classList.remove("text-white", "bg-[#3B82F6]");
     interviewBtn.classList.remove("text-white", "bg-[#3B82F6]");
@@ -181,7 +181,7 @@ function renderAllSection(){
               </div>
             </div>
 
-            <button class="absolute top-7 right-7">
+            <button onclick="deleteJob('${job.title}', 'all')" class="absolute top-7 right-7">
               <i
                 class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
               ></i>
@@ -245,7 +245,7 @@ function renderInterviewSection(){
               </div>
             </div>
 
-            <button class="absolute top-7 right-7">
+            <button onclick="deleteJob('${job.title}', 'interview')" class="absolute top-7 right-7">
               <i
                 class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
               ></i>
@@ -308,7 +308,7 @@ function renderRejectedSection(){
               </div>
             </div>
 
-            <button class="absolute top-7 right-7">
+            <button onclick="deleteJob('${job.title}', 'rejected')" class="absolute top-7 right-7">
               <i
                 class="fa-regular fa-trash-can border rounded-full border-[#64748B] p-2"
               ></i>
@@ -319,6 +319,24 @@ function renderRejectedSection(){
     }
 }
 
+
+function deleteJob(title, status){
+    jobs = jobs.filter(job => job.title !== title);
+    renderAllSection();
+    renderInterviewSection();
+    renderRejectedSection();
+    calculateCount();
+
+    if(status === "all"){
+        totalJob("all");
+    }else if(status === "interview"){
+        totalJob("interview");
+    }else if(status === "rejected"){
+        totalJob("rejected");
+    }
+
+    console.log(jobs);
+}
 
 
 document.getElementById("main").addEventListener("click", function(event){
